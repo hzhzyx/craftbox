@@ -81,7 +81,7 @@ const App: React.FC = () => {
           <div className="flex-shrink-0 flex items-center gap-4 text-xs font-mono text-muted-foreground pb-2">
             <span className="flex flex-col items-end">
               <span>CREATED BY</span>
-              <span className="text-foreground font-bold">zyx</span>
+              <span className="text-foreground font-bold">张叶翔</span>
             </span>
             <div className="w-12 h-12 rounded-full border border-dashed border-white/20 flex items-center justify-center">
               JS

@@ -3,6 +3,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { SearchBar } from './components/SearchBar';
 import { ToolCard } from './components/ToolCard';
 import { ToolModal } from './components/ToolModal';
+import { BackgroundEffects } from './components/BackgroundEffects';
 import { TOOLS } from './constants';
 import { Tool, Category } from './types';
 import { Sparkles, Github, Search, Command, Zap } from 'lucide-react';
@@ -38,7 +39,9 @@ const App: React.FC = () => {
   }, [search, activeCategory]);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col relative">
+      <BackgroundEffects />
+      
       {/* 顶部导航：极致简约 */}
       <nav className="h-16 px-6 flex items-center justify-between border-b border-white/[0.05] bg-black/20 backdrop-blur-md sticky top-0 z-50">
         <div className="flex items-center gap-2 group cursor-default">
